@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>T-Shirts - BRAND</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="main-nav">
+    <div class="nav-left">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a href="#">Category <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="tshirt.html">T-Shirts</a></li>
+            <li><a href="bottom.html">Bottom</a></li>
+            <li><a href="croptop.html">Croptop</a></li>
+            <li><a href="hoodie.html">Hoodie</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#">Collection <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="newarrival.html">New Arrival</a></li>
+            <li><a href="limited.html">Limited</a></li>
+            <li><a href="basic.html">Winter Collection</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#">Info <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="shipping.html">Shipping & Return</a></li>
+            <li><a href="pickup.html">Pickup Info</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-center">
+      <h1 class="brand-logo">EEMA</h1>
+    </div>
+    <div class="nav-right">
+      <button class="search-button" id="search-toggle"><i class="fas fa-search"></i></button>
+      <input type="text" id="search-input" placeholder="Search..." />
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="product-listing">
+    <h2>Croptops</h2>
+    <div class="product-grid">
+
+      <div class="product-card" onclick="openModal('WASHED CURVED TEE [CHARCOAL]', 'images/Crop_WASHED-CURVED-TEE.jpg', ' ', '$30.00')">
+        <div class="product-image"><img src="images/Crop_WASHED-CURVED-TEE.jpg" alt=" "></div>
+        <h3>WASHED CURVED TEE [CHARCOAL]</h3>
+        <p>$30.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('BUTTON-UP COLLAR KNIT [CHARCOAL]', 'images/Crop_BUTTON-UP-COLLAR-KNIT.jpg', ' ', '$62.00')">
+        <div class="product-image"><img src="images/Crop_BUTTON-UP-COLLAR-KNIT.jpg" alt=" "></div>
+        <h3>BUTTON-UP COLLAR KNIT [CHARCOAL]</h3>
+        <p>$62.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('OFF SHOULDER RAGLAN TEE [RED]', 'images/Crop_OFF-SHOULDER-RAGLAN-TEE.jpg', ' ', '$35.00')">
+        <div class="product-image"><img src="images/Crop_OFF-SHOULDER-RAGLAN-TEE.jpg" alt=" "></div>
+        <h3>OFF SHOULDER RAGLAN TEE [RED]</h3>
+        <p>$35.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('HELLO BEAR RINGER TEE [WHITE]', 'images/Crop_HELLO-BEAR-RINGER-TEE.jpg', ' ', '$30.00')">
+        <div class="product-image"><img src="images/Crop_HELLO-BEAR-RINGER-TEE.jpg" alt=" "></div>
+        <h3>HELLO BEAR RINGER TEE [WHITE]</h3>
+        <p>$30.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('NEW ROCKSTAR TEE [RED]', 'images/Crop_NEW-ROCKSTAR-TEE.jpg', ' ', '$30.00')">
+        <div class="product-image"><img src="images/Crop_NEW-ROCKSTAR-TEE.jpg" alt=" "></div>
+        <h3>NEW ROCKSTAR TEE [RED]</h3>
+        <p>$30.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('M STAR TANK TOP', 'images/Crop_M-STAR-TANK-TOP.jpg', ' ', '$20.00')">
+        <div class="product-image"><img src="images/Crop_M-STAR-TANK-TOP.jpg" alt=" "></div>
+        <h3>M STAR TANK TOP</h3>
+        <p>$20.00</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>34567890</p>
+      <p>brand@service.com.my</p>
+    </div>
+    <div class="footer-column">
+      <p>&copy; 2025 BrandName</p>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <span>|</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <h>Copyright</h>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="Product" />
+    <h3 id="modal-title"></h3>
+    <p id="modal-price"></p>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

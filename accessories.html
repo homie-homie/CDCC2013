@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>T-Shirts - BRAND</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="main-nav">
+    <div class="nav-left">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a href="#">Category <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="tshirt.html">T-Shirts</a></li>
+            <li><a href="bottom.html">Bottom</a></li>
+            <li><a href="croptop.html">Croptop</a></li>
+            <li><a href="hoodie.html">Hoodie</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#">Collection <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="newarrival.html">New Arrival</a></li>
+            <li><a href="limited.html">Limited</a></li>
+            <li><a href="basic.html">Basic Tee</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#">Info <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="shipping.html">Shipping & Return</a></li>
+            <li><a href="pickup.html">Pickup Info</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-center">
+      <h1 class="brand-logo">EEMA</h1>
+    </div>
+    <div class="nav-right">
+      <button class="search-button" id="search-toggle"><i class="fas fa-search"></i></button>
+      <input type="text" id="search-input" placeholder="Search..." />
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="product-listing">
+    <h2>Accessories</h2>
+    <div class="product-grid">
+      <div class="product-card" onclick="openModal('TNT Daniel Johnston Kirby Risograph Poster White', 'images/ASS_TNT-Daniel-Johnston-Kirby-Risograph-Poster-White1.png', ' ', '$25.00')">
+        <div class="product-image"><img src="images/ASS_TNT-Daniel-Johnston-Kirby-Risograph-Poster-White1.png" alt=" "></div>
+        <h3>TNT ASb Sticker Pack Multi</h3>
+        <p>$25.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('PLACEHOLDER', 'images/ASS_TNT-ASb-Sticker.jpg', ' ', '$12.00')">
+        <div class="product-image"><img src="images/ASS_TNT-ASb-Sticker.jpg" alt=" "></div>
+        <h3>TNT ASb Sticker Pack Multi</h3>
+        <p>$12.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('GD Overlap Lightning Bears Rug Natural', 'images/ASS_GD-Overlap-Lightning-Bears-Rug-NATURAL1.jpg', ' ', '$180.00')">
+        <div class="product-image"><img src="images/ASS_GD-Overlap-Lightning-Bears-Rug-NATURAL1.jpg" alt=" "></div>
+        <h3>GD Overlap Lightning Bears Rug Natural</h3>
+        <p>$180.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('GD Iconography Glass Purple', 'images/ASS_GD-Iconography-Glass-Purple1.jpg', ' ', '$45.00')">
+        <div class="product-image"><img src="images/ASS_GD-Iconography-Glass-Purple1.jpg" alt=" "></div>
+        <h3>GD Iconography Glass Purple</h3>
+        <p>$45.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('U991TN2 Grey', 'images/ASS_991TN2-1.jpg', ' ', '$270.00')">
+        <div class="product-image"><img src="images/ASS_991TN2-1.jpg" alt=" "></div>
+        <h3>U991TN2 Grey</h3>
+        <p>$270.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('Canvas Lunch Bag Canvas', 'images/ASS_Canvas-Lunch-Bag-CANVAS1.jpg', ' ', '$45.00')">
+        <div class="product-image"><img src="images/ASS_Canvas-Lunch-Bag-CANVAS1.jpg" alt=" "></div>
+        <h3>Canvas Lunch Bag Canvas</h3>
+        <p>$45.00</p>
+      </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com/" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>34567890</p>
+      <p>brand@service.com.my</p>
+    </div>
+    <div class="footer-column">
+      <p>&copy; 2025 BrandName</p>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <span>|</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <h>Copyright</h>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="Product" />
+    <h3 id="modal-title"></h3>
+    <p id="modal-price"></p>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>T-Shirts - BRAND</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="main-nav">
+    <div class="nav-left">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a href="#">Category <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="tshirt.html">T-Shirts</a></li>
+            <li><a href="bottom.html">Bottom</a></li>
+            <li><a href="croptop.html">Croptop</a></li>
+            <li><a href="hoodie.html">Hoodie</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#">Collection <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="newarrival.html">New Arrival</a></li>
+            <li><a href="limited.html">Limited</a></li>
+            <li><a href="basic.html">Winter Collection</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#">Info <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="shipping.html">Shipping & Return</a></li>
+            <li><a href="pickup.html">Pickup Info</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-center">
+      <h1 class="brand-logo">EEMA</h1>
+    </div>
+    <div class="nav-right">
+      <button class="search-button" id="search-toggle"><i class="fas fa-search"></i></button>
+      <input type="text" id="search-input" placeholder="Search..." />
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="product-listing">
+    <h2>Bottoms</h2>
+    <div class="product-grid">
+      <div class="product-card" onclick="openModal('GORE-TEX 3L All Weather Pant Black', 'images/Bottoms_GORE-TEX-3L-All-Weather-Pant-Black1_2799d76f-b07e-48e4-a332-c2d8c583170f.jpg', ' ', '$320.00')">
+        <div class="product-image"><img src="images/Bottoms_GORE-TEX-3L-All-Weather-Pant-Black1_2799d76f-b07e-48e4-a332-c2d8c583170f.jpg" alt=" "></div>
+        <h3>GORE-TEX 3L All Weather Pant Black</h3>
+        <p>$320.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('Relaxed Jeans Multi', 'images/Bottoms_Relaxed-Jeans-MULTI1.jpg', ' ', '$160.00')">
+        <div class="product-image"><img src="images/Bottoms_Relaxed-Jeans-MULTI1.jpg" alt=" "></div>
+        <h3>Relaxed Jeans Multi</h3>
+        <p>$160.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('Splashed Chino Pant Green', 'images/Bottoms_Splashed-Chino-Pant-GREEN1.jpg', ' ', '$160.00')">
+        <div class="product-image"><img src="images/Bottoms_Splashed-Chino-Pant-GREEN1.jpg" alt=" "></div>
+        <h3>Splashed Chino Pant Green</h3>
+        <p>$160.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('Times Sweatpant Black', 'images/Bottoms_Times-Sweatpant-BLACK1.jpg', ' ', '$120.00')">
+        <div class="product-image"><img src="images/Bottoms_Times-Sweatpant-BLACK1.jpg" alt=" "></div>
+        <h3>Times Sweatpant Black</h3>
+        <p>$120.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('Overdyed Sweatpant Olive', 'images/Bottoms_Overdyed-Sweatpant-OLIVE1.jpg', ' ', '$110.00')">
+        <div class="product-image"><img src="images/Bottoms_Overdyed-Sweatpant-OLIVE1.jpg" alt=" "></div>
+        <h3>Overdyed Sweatpant Olive</h3>
+        <p>$110.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('TNT GRAMICCI WASHED CORDUROY PANT Brown', 'images/Bottoms_TNT-GRAMICCI-WASHED-CORDUROY-PANT-Brown1.jpg', ' ', '$140.00')">
+        <div class="product-image"><img src="images/Bottoms_TNT-GRAMICCI-WASHED-CORDUROY-PANT-Brown1.jpg" alt=" "></div>
+        <h3>TNT GRAMICCI WASHED CORDUROY PANT Brown</h3>
+        <p>$140.00</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com/" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>34567890</p>
+      <p>brand@service.com.my</p>
+    </div>
+    <div class="footer-column">
+      <p>&copy; 2025 BrandName</p>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <span>|</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <h>Copyright</h>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="Product" />
+    <h3 id="modal-title"></h3>
+    <p id="modal-price"></p>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

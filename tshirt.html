@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>T-Shirts - BRAND</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="main-nav">
+    <div class="nav-left">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a href="#">Category <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="tshirt.html">T-Shirts</a></li>
+            <li><a href="bottom.html">Bottom</a></li>
+            <li><a href="croptop.html">Croptop</a></li>
+            <li><a href="hoodie.html">Hoodie</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#">Collection <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="newarrival.html">New Arrival</a></li>
+            <li><a href="limited.html">Limited</a></li>
+            <li><a href="basic.html">Basic Tee</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#">Info <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="shipping.html">Shipping & Return</a></li>
+            <li><a href="pickup.html">Pickup Info</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-center">
+      <h1 class="brand-logo">EEMA</h1>
+    </div>
+    <div class="nav-right">
+      <button class="search-button" id="search-toggle"><i class="fas fa-search"></i></button>
+      <input type="text" id="search-input" placeholder="Search..." />
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="product-listing">
+    <h2>T-Shirts</h2>
+    <div class="product-grid">
+      <div class="product-card" onclick="openModal('TECH PIGMENT SLEEVELESS [CHARCOAL]', 'images/Tshirt_TECH-PIGMENT-SLEEVELESS.jpg', '$38.99')">
+        <div class="product-image"><img src="images/Tshirt_TECH-PIGMENT-SLEEVELESS.jpg" alt=" "></div>
+        <h3>TECH PIGMENT SLEEVELESS [CHARCOAL]</h3>
+        <p>$38.99</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('ROSE RAGLAN TEE [CREAM]', 'images/Tshirt_ROSE-RAGLAN-TEE.jpg', ' ', '$30.00')">
+        <div class="product-image"><img src="images/Tshirt_ROSE-RAGLAN-TEE.jpg" alt=" "></div>
+        <h3>ROSE RAGLAN TEE [CREAM]</h3>
+        <p>$30.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('GUILTY APPLIQUE TEE [BLACK]', 'images/Tshirt_GUILTY-APPLIQUE-TEE.jpg', ' ', '$38.00')">
+        <div class="product-image"><img src="images/Tshirt_GUILTY-APPLIQUE-TEE.jpg" alt=" "></div>
+        <h3>GUILTY APPLIQUE TEE [BLACK]</h3>
+        <p>$38.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('PROBLEM DOG TEE [PINK]', 'images/Tshirt_PROBLEM-DOG-TEE.jpg', ' ', '$38.00')">
+        <div class="product-image"><img src="images/Tshirt_PROBLEM-DOG-TEE.jpg" alt=" "></div>
+        <h3>PROBLEM DOG TEE [PINK]</h3>
+        <p>$38.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('Jacquard Pattern Button Up Top Multi', 'images/Tshirt_Jacquard-Pattern-Button-Up-Top-Multi.jpg', ' ', '$70.00')">
+        <div class="product-image"><img src="images/Tshirt_Jacquard-Pattern-Button-Up-Top-Multi.jpg" alt=" "></div>
+        <h3>Jacquard Pattern Button Up Top Multi</h3>
+        <p>$70.00</p>
+      </div>
+
+      <div class="product-card" onclick="openModal('Weird Paisley S/S Shirt Ivory', 'images/Tshirt_TWeird-Paisley-S-S-Shirt-Ivory.jpg', ' ', '$91.00')">
+        <div class="product-image"><img src="images/Tshirt_TWeird-Paisley-S-S-Shirt-Ivory.jpg" alt=" "></div>
+        <h3>Weird Paisley S/S Shirt Ivory</h3>
+        <p>$91.00</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>34567890</p>
+      <p>brand@service.com.my</p>
+    </div>
+    <div class="footer-column">
+      <p>&copy; 2025 BrandName</p>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <span>|</span>
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <h>Copyright</h>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="Product" />
+    <h3 id="modal-title"></h3>
+    <p id="modal-price"></p>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
